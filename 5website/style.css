@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100vh;
+}
+
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1697297937792-ec7c0adf6c16?auto=format&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=9000");
+    background-size: cover;
+    background-position: 50% 40%;
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    min-height:inherit;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+#text{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    padding: 0 10vw;
+}
+
+#text h1{
+    padding: 20px;
+    /* margin-righ: 20px; */
+    font-size: 6vw;
+    color: transparent;
+    font-family:   sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+#text-right{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text-right p{
+    color: white;
+    font-family:   sans-serif;
+    width: 20vw;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-between;
+    margin:20px ;
+    color: white;
+    width: 10vw;
+}
+
+
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    /* background-color: rgb(0, 255, 55); */
+}
+#b1{
+    padding: 50px;
+    width: 25%;
+    min-height: inherit;
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/780/606/337/planet-solar-system-space-space-art-wallpaper-preview.jpg"); */
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/818/684/17/mars-planet-desktop-backgrounds-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family:   sans-serif;
+    color: white;
+}
+
+#b1 p{
+    font-size: 12px;
+    margin: 2vw;
+    text-align: center;
+    /* padding-left: 40px; */
+    /* margin-right: 10vw; */
+    width: 15v;
+}
+
+#b1 h3{
+    text-align:center;
+    /* font-size: 12px; */
+    margin-top: 5px;
+    width:100%;
+}
+#b2{
+    width: 25%;
+    min-height: inherit;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/458/631/620/space-exploration-universe-solar-system-nasa-hd-wallpaper-preview.jpg");
+    /* background-image: url("https://images.unsplash.com/photo-1605462398512-51e939d2d21d?auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTAzfHxvcmFuZ2V8ZW58MHwxfDB8fHww&w=500"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#b3{
+    width: 25%;
+    min-height: inherit;
+}
+#b4{
+    width: 25%;
+    min-height: inherit;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/1018/422/408/abstract-solar-system-space-planet-wallpaper-preview.jpg");
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/709/427/739/planet-space-space-art-minimalism-wallpaper-preview.jpg"); */
+    /* background-image: url("https://img.freepik.com/free-vector/colorful-galaxy-watercolor-doodle-frame-black-background_53876-115327.jpg?w=740&t=st=1697609692~exp=1697610292~hmac=bc5721c05ff1001806eff52d540ffe2a07adb7c1d307b4e602333b4c1681956a"); */
+    /* background-image: url("https://img.freepik.com/free-photo/vertical-shot-sea-starry-sky-with-milky-way_181624-4770.jpg?w=740&t=st=1697610375~exp=1697610975~hmac=43e2d6b6c3697917693990c10a2a57781ad50f0490dc309011e243584046d1b1"); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    font-family:   sans-serif;
+}
+
+
+#b3-top{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/59/93/153/digital-art-space-art-planet-space-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#b3-bottom{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/982/931/780/space-planet-earth-jupiter-saturn-solar-system-nine-panel-earth-painting-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.notf{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.notf p{
+    /* padding-left: 6px; */
+    width: 71%;
+    font-size: 15px;
+}
+
+.notf .photo{
+    margin-left:20px ;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#photo1{
+background-image: url("https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1976");
+background-position: center;
+background-size: cover;
+}
+
+#photo2{
+    background-image: url("https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1974");
+    background-position: top;
+    background-size: cover;
+    }
+
+    #photo3{
+        background-image: url("https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070");
+        background-position: top;
+        background-size: cover;
+        }
+
+        @media (max-width: 500px){
+            #overlay #text{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #overlay #text #text-right{
+                flex-direction: column;
+            }
+            #overlay #text #text-right p{
+                width: initial;
+                margin-top: 20px;
+            }
+            #overlay #text #text-right .icon{
+                margin-top: 30px;
+            }
+            #text {
+                position: relative;
+            }
+
+            #icon i{
+                padding-right: 10px;
+            }
+            #text h1 {
+                font-size: 10vw;
+                -webkit-text-stroke-width: 1px;
+
+            }
+
+            #bottom{
+                flex-direction: column;
+            }
+            #b1{
+                width: inherit;
+            }
+            #b2{
+                width: inherit;
+            }
+            #b3{
+                width: inherit;
+            }
+            #b4{
+                width: inherit;
+            }
+
+        }

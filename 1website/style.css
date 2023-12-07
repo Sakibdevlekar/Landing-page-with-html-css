@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(342.86deg 14.29% 61.57%);
+    display: flex;
+}
+
+#box1{
+    height: 100%;
+    width: 26%;
+    /*background-color: red; */
+}
+
+#box2{
+    margin-top: 80px;
+    height: 80%;
+    width: 67%;background-color: rgb(94, 32, 151);
+    background-image: url('https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1227&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(344, 42%, 56%, 0.233);
+}
+
+#box3{
+    height: 100%;
+    /* width: 7%;background-color: rgb(114, 233, 110); */
+}
+
+#text-div{
+    /* height: 300px; */
+    position: absolute;
+    width: 400px;
+    /* background-color: aqua; */
+    left: 14%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+#text-div>h1{
+    font-size: 85px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+    line-height: 78px;
+    color: white ;
+    text-transform: uppercase;
+}
+
+#small-img-div{
+    height: 400px;
+    width: 300px;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0,-50%);
+    background-image: url('https://images.unsplash.com/photo-1604514775346-3f40ef356d68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+#overlay-in{
+    height: 100%;
+    width: 100%;
+    background-color: hsla(344, 40%, 60%, 0.274);
+}
+#vertical-text{
+    position: absolute;
+    right: -45%;
+    top: -6;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+}
+
+#vertical-text>h1{
+    font-size: 70px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: transparent;
+    letter-spacing: 10px;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color: white;
+}
+
+
+#nav{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    left:14%;
+    top: 8%;
+}
+
+#logo{
+    border: 2px solid white;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 50%;
+    border-style: dotted;
+    
+}
+#nav h5{
+    font-size: 20px;
+    font-family:sans-serif ;
+    color: white;
+}
+
+
+
+/*  THIS DESIGN IS NOT RESPONSIVE  */

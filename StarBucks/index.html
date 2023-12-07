@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <title>StarBucks</title>
+</head>
+<body>
+    <div class="toggle">
+        <i class="ri-close-line"></i>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="Assets/logo.png" alt=""></a>
+            <i class="ri-menu-line"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span>
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minus laudantium nisi est nostrum rerum necessitatibus illo ut cum error.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="Assets/img1.png" alt="" class="StarBucks">
+            </div>
+            <div class="thumb">
+                <ul>
+                    <li><img src="Assets/thumb1.png"   onclick="imgSlider('Assets/img1.png'); changeColor('#017143')"></li>
+                    <li><img src="Assets/thumb2.png"   onclick="imgSlider('Assets/img2.png'); changeColor('#eb7495')"></li>
+                    <li><img src="Assets/thumb3.png"   onclick="imgSlider('Assets/img3.png'); changeColor('#d752b1')"></li>
+                </ul>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="Assets/facebook.png" alt=""  ></a></li>
+                <li><a href="#"><img src="Assets/twitter.png" alt=""  ></a></li>
+                <li><a href="#"><img src="Assets/instagram.png" alt=""  ></a></li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(selectedImg){
+            document.querySelector('.StarBucks').src = selectedImg;
+        }
+        function changeColor(color){
+            const circle = document.querySelector('.circle');
+            const sci = document.querySelector('.sci');
+            circle.style.background = color
+            // sci.style.background = color
+        }
+        const menuBtn = document.querySelector(".ri-menu-line");
+        const closeBtn = document.querySelector(".ri-close-line");
+        const nav = document.querySelector(".toggle");
+
+        menuBtn.addEventListener("click",()=>{
+            console.log('cliked');
+            nav.style.right = "0%";
+        });
+
+        closeBtn.addEventListener("click",()=>{
+        nav.style.right = "-100%";
+        });
+    </script>
+</body>
+</html>
